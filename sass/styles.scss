@@ -67,9 +67,10 @@ table {
 }
 
 #header{
-	padding-top:5rem;
-	padding-bottom:2.5rem;
+	padding:5rem 2rem 2.5rem 2rem;
 	text-align: center;
+	max-width:60rem;
+	margin:auto;
 	img{
 		max-width: 100%
 	}
@@ -288,14 +289,30 @@ table {
 		margin:auto;
 	}
 	input{
+		padding:0.4rem;
 		display:block;
 		border:.2rem solid #fff;
-		width:60%;
+		width:55%;
 		margin:2.5rem auto;
 		background-color:transparent;
 		line-height:4rem;
 		color:#fff;
 		font-size:1.5rem;
+	}
+	.message-ok, .message-wrong{
+		background-color:$color_second;
+		max-width:20rem;
+		margin:auto;
+		padding:1.5rem 0;
+		display:none;
+		text-align: center;
+		font-size:1.25rem;
+		&.visible{
+			display:block;
+		}
+	}
+	.message-wrong{
+		background-color:red;
 	}
 }
 
@@ -319,6 +336,11 @@ table {
 		max-width:100%;
 		margin:auto 1rem;
 	}
+
+	.box-links{
+		padding:0 2.5rem;
+		margin-bottom:2rem;
+	}
 	.color-boxes>div{
 		width:100%;
 		.mini-container{
@@ -332,6 +354,22 @@ table {
 			padding:3rem 1.5rem 0 1.5rem;
 		}
 	}
+	.color-boxes>div:nth-child(2){
+		background: url(../assets/bubbles-azul.png) repeat-x #E65A2B;
+	}
+
+	.color-boxes>div:nth-child(3){
+		background: url(../assets/bubbles-naranja.png) repeat-x #FDBE00;
+	}
+	.color-boxes>div:nth-child(4){
+		background: url(../assets/bubbles-amarillo.png) repeat-x #8B786C;
+	}
+	.color-boxes>div:nth-child(5){
+		background: url(../assets/bubbles-arena.png) repeat-x #424242;
+	}
+	.color-boxes>div:nth-child(6){
+		background: url(../assets/bubbles-oscuro.png) repeat-x #B4B0A7;
+	}
 }
 
 
@@ -340,8 +378,8 @@ table {
 		display:block;
 	}
 	.box-links div{
-		width:calc(100% - 2rem);
-		margin:1rem!important;
+		width:100%;
+		margin-bottom:1rem;
 	}
 	.box-info>div{
 		padding:7rem 1rem;
@@ -366,6 +404,12 @@ table {
 	}
 	.box-links div a{
 		padding:1.5rem .8rem!important;
+	}
+	.box-image-input input{
+		width:80%;
+	}
+	.box-links{
+		padding:0 1rem;
 	}
 }
 

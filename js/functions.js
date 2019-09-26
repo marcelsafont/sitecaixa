@@ -14,4 +14,13 @@ $(document).ready(function(){
 		$(this).toggleClass('checked');
 	})
 	$("#container-video").fitVids();
+	$('#enigma').keyup(function(){
+		if($(this).val() == 'caixabank'){
+			$('.message-wrong').removeClass('visible');
+			$('.message-ok').addClass('visible');
+		}else{
+			$('.message-wrong').addClass('visible');
+			$('.message-ok').removeClass('visible');
+		}
+	})
 });
