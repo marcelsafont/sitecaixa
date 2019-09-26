@@ -1,9 +1,9 @@
 $(window).load(function() {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    slideshow: false
   });
-
-  $('.enigma .state').click(function(){
-  	console.log('hola');
+  $('.state').on('click', function(){
+  	alert('holaaa');
   })
 });

@@ -54,12 +54,12 @@ table {
 }
 
 .container{
-	max-width:70rem;
+	max-width:60rem;
 	margin:auto;
 }
 
 .mini-container{
-	max-width:43rem;
+	max-width:37rem;
 }
 
 #header{
@@ -74,52 +74,53 @@ table {
 	> div{
 		width:50%;
 		color:#fff;
-		.mini-container{
-			padding:4rem;
+		.mini-container .content{
+			padding:5rem 4rem 4rem 4rem;
 		}
 		h2{
-			font-size:2.7rem;
-			line-height:3rem;
+			font-size:2rem;
+			line-height:2.4rem;
 			padding-bottom:1rem;
 		}
 		p{
-			font-size:1.7rem;
-			line-height:2rem;
+			font-size:1.25rem;
+			line-height:1.8rem;
 		}
 		&:nth-child(1){
-			background-color:$color_first;
+			
+			background:url('../assets/bubbles-blanco.png') repeat-x $color_first;
 			.mini-container{
 				float:right;
 			}
 		}
 		&:nth-child(2){
-			background-color:$color_second;
+			background:url('../assets/bubbles-blanco.png') repeat-x $color_second;
 			.mini-container{
 				float:left;
 			}
 		}
 		&:nth-child(3){
-			background-color:$color_third;
+			background:url('../assets/bubbles-azul.png') repeat-x $color_third;
 			.mini-container{
 				float:right;
 			}
 		}
 		&:nth-child(4){
-			background-color:$color_forth;
+			background:url('../assets/bubbles-naranja.png') repeat-x $color_forth;
 			.mini-container{
 				float:left;
 			}
 		}
 
 		&:nth-child(5){
-			background-color:$color_fifth;
+			background:url('../assets/bubbles-amarillo.png') repeat-x $color_fifth;
 			.mini-container{
 				float:right;
 			}
 		}
 
 		&:nth-child(6){
-			background-color:$color_sixth;
+			background:url('../assets/bubbles-arena.png') repeat-x $color_sixth;
 			.mini-container{
 				float:left;
 			}
@@ -137,16 +138,15 @@ table {
 		color:$color_seventh;
 		padding:7rem 5rem;
 		border:.5rem solid $color_seventh;
-		font-size:2.2rem;
-		line-height:3rem;
+		font-size:1.62rem;
+		line-height:2.2rem;
 	}
 	&:before{
-		content:url('/assets/estatua.png');
-		transform: scale(.3);
+		content:url('../assets/estatua.jpg');
 		position:absolute;
-		left:calc(30% - 3.5rem);
-		top:-13rem;
 		z-index:10;
+		left:calc(50% - 100px);
+		top:0px;
 	}
 }
 
@@ -168,7 +168,6 @@ table {
 	  		text-align: center;
 	  		img{
 	  			max-width:80px;
-	  			margin-top:4px;
 	  		}
 	  	}
 	}
@@ -234,6 +233,7 @@ table {
 	}
 	h3{
 		font-size:2rem;
+		line-height: 2.4rem;
 		font-weight: bold;
 		max-width:30rem;
 		margin:auto;
@@ -244,7 +244,7 @@ table {
 		width:60%;
 		margin:2.5rem auto;
 		background-color:transparent;
-		line-height:3.5rem;
+		line-height:4rem;
 		color:#fff;
 		font-size:1.5rem;
 	}
