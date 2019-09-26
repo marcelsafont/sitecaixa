@@ -75,7 +75,7 @@ table {
 .color-boxes{
 	display:flex;
 	flex-wrap: wrap;
-	padding-bottom:2.5rem;
+	padding-bottom:4rem;
 	> div{
 		width:50%;
 		color:#fff;
@@ -118,16 +118,36 @@ table {
 		}
 
 		&:nth-child(5){
+			position:relative;
 			background:url('../assets/bubbles-amarillo.png') repeat-x $color_fifth;
 			.mini-container{
 				float:right;
 			}
+			&:after{
+				content:"";
+				width:100%;
+				height:45px;
+				position:absolute;
+			    bottom:-30px;
+			    background:url('../assets/bubbles-oscuro.png') repeat-x;
+			}
 		}
 
 		&:nth-child(6){
+			position:relative;
 			background:url('../assets/bubbles-arena.png') repeat-x $color_sixth;
 			.mini-container{
 				float:left;
+			}
+
+			&:after{
+				left:0;
+				content:"";
+				width:100%;
+				height:45px;
+				position:absolute;
+			    bottom:-30px;
+			    background:url('../assets/bubbles-claro.png') repeat-x;
 			}
 		}
 
