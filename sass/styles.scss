@@ -70,6 +70,9 @@ table {
 	padding-top:5rem;
 	padding-bottom:2.5rem;
 	text-align: center;
+	img{
+		max-width: 100%
+	}
 }
 
 .color-boxes{
@@ -241,6 +244,17 @@ table {
 			font-size:1.25rem;
 			line-height:1.8rem;
 			display:flex;
+			.box-checkbox{
+				width:1em;
+				height:1rem;
+				border:0.2rem solid #fff;
+				margin-right:1rem;
+
+				&.checked{
+					background-color:#eee;
+					box-shadow:inset 0 0 2px #000000;
+				}
+			}
 		}
 		.flex-control-paging li a{
 			background-color:#fff;
@@ -287,6 +301,9 @@ table {
 
 .box-gif, .box-video, .box-audio{
 	text-align: center;
+	img{
+		max-width:100%;
+	}
 }
 
 .box-video{
@@ -297,27 +314,40 @@ table {
 	}
 }
 
-
-.pretty .state label:after, .pretty .state label:before{
-	top:0;
-	z-index:30;
-}
-
-.pretty .state{
-	width:30px;
-	height:30px;
-	position: relative;
-	z-index:30;
-	label{
-		width:30px;
-		height:30px;
+@media screen and (max-width:1280px){
+	.container{
+		max-width:100%;
+		margin:auto 1rem;
+	}
+	.color-boxes>div{
+		width:100%;
+		.mini-container{
+			max-width:60rem;
+			float:none!important;
+		}
+	}
+	.box-info-grey.container{
+		margin:auto 60px;
+		.content{
+			padding:3rem 1.5rem 0 1.5rem;
+		}
 	}
 }
 
-.pretty.p-default input:checked~.state label:after{
-	background-color:#fff!important;
+
+@media screen and (max-width:1080px){
+	.box-links{
+		display:block;
+	}
+	.box-links div{
+		width:100%;
+		margin:1rem 0!important;
+	}
 }
 
-.pretty .state label:before{
-	border-color:#fff;
+@media screen and (max-width:640px){
+	.box-info-grey.container{
+		margin:0;
+	}
 }
+

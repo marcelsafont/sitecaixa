@@ -2,7 +2,7 @@ $(window).load(function() {
 	$('.flexslider').flexslider({
 		animation: "fade",
 	    start: function (slider) {
-	    	$('.content-slide input').change(function(event){
+	    	$('.content-slide .box-checkbox').click(function(event){
 	        	$('.flexslider').flexslider('next')
 	    	})
 	  	}
@@ -10,5 +10,8 @@ $(window).load(function() {
 });
 
 $(document).ready(function(){
+	$('.box-checkbox').click(function(){
+		$(this).toggleClass('checked');
+	})
 	$("#container-video").fitVids();
 });
