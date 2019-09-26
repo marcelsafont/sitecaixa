@@ -177,7 +177,7 @@ table {
 .box-info-grey{
 	background-color:$color_nineth;
 	.content{
-		padding:3rem 6rem;
+		padding:3rem 6rem 0rem 6rem;
 		h2{
 			border-bottom:.15rem solid #fff;
 			padding-bottom:2.5rem;
@@ -208,5 +208,55 @@ table {
 			line-height:2.4rem;
 			display:flex;
 		}
+		.flex-control-paging li a{
+			background-color:#fff;
+			opacity:0.5;
+			box-shadow:none;
+			&.flex-active{
+				opacity:1;
+			}
+		}
 	}
+}
+
+.box-image-input{
+	padding:3rem 0;
+	background:url('../assets/bg-input.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	height:auto;
+	color:#fff;
+	h2{
+		text-align:center;
+		font-size:1.5rem;
+		color:$color_nineth;
+		padding-bottom:3rem;
+	}
+	h3{
+		font-size:2rem;
+		font-weight: bold;
+		max-width:30rem;
+		margin:auto;
+	}
+	input{
+		display:block;
+		border:.2rem solid #fff;
+		width:60%;
+		margin:2.5rem auto;
+		background-color:transparent;
+		line-height:3.5rem;
+		color:#fff;
+		font-size:1.5rem;
+	}
+}
+
+
+.pretty .state label:after, .pretty .state label:before{
+	top:0;
+	z-index:30;
+	
+}
+
+.pretty .state label:before{
+	border-color:#fff;
 }
