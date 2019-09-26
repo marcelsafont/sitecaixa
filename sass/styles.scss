@@ -165,7 +165,7 @@ table {
 	> div{
 		color:$color_seventh;
 		padding:7rem 5rem;
-		border:.5rem solid $color_seventh;
+		border:.3rem solid $color_seventh;
 		font-size:1.62rem;
 		line-height:2.2rem;
 	}
@@ -340,14 +340,32 @@ table {
 		display:block;
 	}
 	.box-links div{
-		width:100%;
-		margin:1rem 0!important;
+		width:calc(100% - 2rem);
+		margin:1rem!important;
+	}
+	.box-info>div{
+		padding:7rem 1rem;
 	}
 }
 
 @media screen and (max-width:640px){
 	.box-info-grey.container{
 		margin:0;
+	}
+	.color-boxes>div .mini-container .content{
+		padding:5rem 2rem 5rem 2rem;
+	}
+	.box-info{
+		padding:6rem 1rem 2rem 1rem;
+	}
+	.box-info-grey .flexslider .content-slide{
+		padding:1rem;
+	}
+	.box-info-grey .content h2{
+		padding-left:1rem;
+	}
+	.box-links div a{
+		padding:1.5rem .8rem!important;
 	}
 }
 
