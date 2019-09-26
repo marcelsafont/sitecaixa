@@ -62,6 +62,10 @@ table {
 	max-width:37rem;
 }
 
+.margins{
+	padding:1rem 0 4rem 0;
+}
+
 #header{
 	padding-top:5rem;
 	padding-bottom:2.5rem;
@@ -71,6 +75,7 @@ table {
 .color-boxes{
 	display:flex;
 	flex-wrap: wrap;
+	padding-bottom:2.5rem;
 	> div{
 		width:50%;
 		color:#fff;
@@ -163,11 +168,21 @@ table {
 	  		background-color:$color_seventh;
 	  		color:#fff;
 	  		border-bottom:0.5rem solid $color_eight;
-	  		font-size:2.7rem;
+	  		font-size:2rem;
 	  		text-decoration:none;
 	  		text-align: center;
 	  		img{
 	  			max-width:80px;
+	  		}
+	  		&.arrow{
+	  			img{
+	  				margin-bottom:-10px;
+	  			}
+	  		}
+	  		&.download{
+	  			img{
+	  				margin-bottom:-16px;
+	  			}
 	  		}
 	  	}
 	}
@@ -179,10 +194,10 @@ table {
 		padding:3rem 6rem 0rem 6rem;
 		h2{
 			border-bottom:.15rem solid #fff;
-			padding-bottom:2.5rem;
-			padding-left:3rem;
+			padding-bottom:2rem;
+			padding-left:2rem;
 			color:#fff;
-			font-size:2.7rem;
+			font-size:2rem;
 		}
 	}
 	
@@ -203,8 +218,8 @@ table {
 		.content-slide{
 			padding:3rem;
 			color:#fff;
-			font-size:1.7rem;
-			line-height:2.4rem;
+			font-size:1.25rem;
+			line-height:1.8rem;
 			display:flex;
 		}
 		.flex-control-paging li a{
@@ -220,14 +235,14 @@ table {
 
 .box-image-input{
 	padding:3rem 0;
-	background:url('../assets/bg-input.jpg');
+	background:url('../assets/enigma-background.jpg');
 	background-repeat:no-repeat;
 	background-size: cover;
 	height:auto;
 	color:#fff;
 	h2{
 		text-align:center;
-		font-size:1.5rem;
+		font-size:1.25rem;
 		color:$color_nineth;
 		padding-bottom:3rem;
 	}
@@ -250,11 +265,37 @@ table {
 	}
 }
 
+.box-gif, .box-video, .box-audio{
+	text-align: center;
+}
+
+.box-video{
+	#container-video{
+		width: 100%;
+    	position: relative;
+    	padding: 0;
+	}
+}
+
 
 .pretty .state label:after, .pretty .state label:before{
 	top:0;
 	z-index:30;
-	
+}
+
+.pretty .state{
+	width:30px;
+	height:30px;
+	position: relative;
+	z-index:30;
+	label{
+		width:30px;
+		height:30px;
+	}
+}
+
+.pretty.p-default input:checked~.state label:after{
+	background-color:#fff!important;
 }
 
 .pretty .state label:before{

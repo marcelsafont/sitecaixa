@@ -7,10 +7,12 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="assets/flexslider.css">
+	
 	<script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
+  <script src="assets/jquery.fitvids.js"></script>
   <script src="js/jquery.flexslider-min.js"></script>
   
 </head>
@@ -98,10 +100,10 @@
 
 		<div class="box-links container">
 			<div>
-				<a href="#">Endalia<img src="assets/arrow.svg"></a>
+				<a href="#" class="arrow">Endalia<img src="assets/arrow.svg"></a>
 			</div>
 			<div>
-				<a href="#">Plan de desarrollo</a>
+				<a href="assets/descargable-test.pdf" class="download">Plan de desarrollo<img src="assets/download.svg"></a>
 			</div>
 		</div>
 
@@ -113,7 +115,7 @@
 						<li>
 							<div class="content-slide">
 								<div class="pretty p-default p-thick">
-							        <input type="checkbox" />
+							        <input type="checkbox">
 							        <div class="state">
 							            <label></label>
 							        </div>
@@ -128,7 +130,21 @@
 						<li>
 							<div class="content-slide">
 								<div class="pretty p-default p-thick">
-							        <input type="checkbox" />
+							        <input type="checkbox">
+							        <div class="state">
+							            <label></label>
+							        </div>
+							    </div>
+							    <div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam enim porro voluptatum iusto velit. Natus ea deserunt nulla hic. Sed optio iusto voluptas omnis perferendis nostrum sit delectus accusantium et.
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="content-slide">
+								<div class="pretty p-default p-thick">
+							        <input type="checkbox">
 							        <div class="state">
 							            <label></label>
 							        </div>
@@ -144,6 +160,26 @@
 			</div>
 			
 		</div>
+		<div class="container margins box-gif">
+			<img src="assets/animatedgif-test.gif" alt="">
+		</div>
+
+		<div class="container margins box-video">
+			<div id="container-video">
+				<iframe src="https://www.youtube.com/embed/5B6IGdWe3R4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+		</div>	
+
+		<div class="container margins box-audio">
+			
+			<audio controls>
+			  <source src="assets/audio-test.m4a" type="audio/mpeg">
+			Your browser does not support the audio element.
+			</audio>
+		</div>	
+
+
 		<div class="box-image-input">
 			<div class="container">
 				<h2>Resuelve el enigma para acceder a la siguiente fase</h2>
