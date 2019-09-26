@@ -1,0 +1,212 @@
+$color_first: #009CDE;
+$color_second: #E65A2B;
+$color_third: #FDBE00;
+$color_forth: #8B786C;
+$color_fifth: #424242;
+$color_sixth: #B4B0A7;
+$color_seventh: #424242;
+$color_eight: #212121;
+$color_nineth: #B4B0A7;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Trebuchet MS';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+	max-width:70rem;
+	margin:auto;
+}
+
+.mini-container{
+	max-width:43rem;
+}
+
+#header{
+	padding-top:5rem;
+	padding-bottom:2.5rem;
+	text-align: center;
+}
+
+.color-boxes{
+	display:flex;
+	flex-wrap: wrap;
+	> div{
+		width:50%;
+		color:#fff;
+		.mini-container{
+			padding:4rem;
+		}
+		h2{
+			font-size:2.7rem;
+			line-height:3rem;
+			padding-bottom:1rem;
+		}
+		p{
+			font-size:1.7rem;
+			line-height:2rem;
+		}
+		&:nth-child(1){
+			background-color:$color_first;
+			.mini-container{
+				float:right;
+			}
+		}
+		&:nth-child(2){
+			background-color:$color_second;
+			.mini-container{
+				float:left;
+			}
+		}
+		&:nth-child(3){
+			background-color:$color_third;
+			.mini-container{
+				float:right;
+			}
+		}
+		&:nth-child(4){
+			background-color:$color_forth;
+			.mini-container{
+				float:left;
+			}
+		}
+
+		&:nth-child(5){
+			background-color:$color_fifth;
+			.mini-container{
+				float:right;
+			}
+		}
+
+		&:nth-child(6){
+			background-color:$color_sixth;
+			.mini-container{
+				float:left;
+			}
+		}
+
+	}
+	
+}
+
+.box-info{
+	position:relative;
+	padding:7rem 3.5rem; 
+	text-align:center;
+	> div{
+		color:$color_seventh;
+		padding:7rem 5rem;
+		border:.5rem solid $color_seventh;
+		font-size:2.2rem;
+		line-height:3rem;
+	}
+	&:before{
+		content:url('/assets/estatua.png');
+		transform: scale(.3);
+		position:absolute;
+		left:calc(30% - 3.5rem);
+		top:-13rem;
+		z-index:10;
+	}
+}
+
+.box-links{
+	display:flex;
+	justify-content: space-between;
+	padding-bottom:7rem;
+	div{
+		width:calc(50% - 1rem);
+	  	a{
+	  		display:block;
+	  		border-radius: .5rem;
+	  		padding:2rem;
+	  		background-color:$color_seventh;
+	  		color:#fff;
+	  		border-bottom:0.5rem solid $color_eight;
+	  		font-size:2.7rem;
+	  		text-decoration:none;
+	  		text-align: center;
+	  		img{
+	  			max-width:80px;
+	  			margin-top:4px;
+	  		}
+	  	}
+	}
+}
+
+.box-info-grey{
+	background-color:$color_nineth;
+	.content{
+		padding:3rem 6rem;
+		h2{
+			border-bottom:.15rem solid #fff;
+			padding-bottom:2.5rem;
+			padding-left:3rem;
+			color:#fff;
+			font-size:2.7rem;
+		}
+	}
+	
+	.flexslider{
+		background-color:transparent;
+		border:0;
+		.flex-control-nav{
+			bottom:0;
+			top:-50px;
+			text-align:right;
+			li{
+				text-align:center;
+			}
+		}
+		.flex-direction-nav{
+			display:none!important;
+		}
+		.content-slide{
+			padding:3rem;
+			color:#fff;
+			font-size:1.7rem;
+			line-height:2.4rem;
+			display:flex;
+		}
+	}
+}
