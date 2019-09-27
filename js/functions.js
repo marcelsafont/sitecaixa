@@ -14,8 +14,8 @@ $(document).ready(function(){
 		$(this).toggleClass('checked');
 	})
 	$("#container-video").fitVids();
-	$('#enigma').keyup(function(){
-		if($(this).val() == 'caixabank'){
+	$('.enviar-btn').click(function(){
+		if($('#enigma').val() == 'caixabank'){
 			$('.message-wrong').removeClass('visible');
 			$('.message-ok').addClass('visible');
 		}else{
